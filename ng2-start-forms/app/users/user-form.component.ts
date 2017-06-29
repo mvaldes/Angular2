@@ -14,9 +14,9 @@ import { User } from '../shared/models/user';
   template: `
     <form #form="ngForm" (ngSubmit)="onSubmit()" *ngIf="active">
         
-        {{ form.valid }}
         
-      <div class="form-group">allo
+        
+      <div class="form-group">
         <input type="text" class="form-control" name="name" required [(ngModel)]="newUser.name" #name="ngModel">
           
         <span class="help-block" *ngIf="name.invalid && name.touched">Name is required.</span>
